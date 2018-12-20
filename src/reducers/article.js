@@ -1,9 +1,4 @@
-import {
-  ARTICLE_PAGE_LOADED,
-  ARTICLE_PAGE_UNLOADED,
-  ADD_COMMENT,
-  DELETE_COMMENT
-} from '../constants/actionTypes';
+import {ADD_COMMENT, ARTICLE_PAGE_LOADED, ARTICLE_PAGE_UNLOADED, DELETE_COMMENT} from '../constants/actionTypes';
 
 export default (state = {}, action) => {
   switch (action.type) {
@@ -24,7 +19,7 @@ export default (state = {}, action) => {
           (state.comments || []).concat([action.payload.comment])
       };
     case DELETE_COMMENT:
-      const commentId = action.commentId
+	    const commentId = action.commentId;
       return {
         ...state,
         comments: state.comments.filter(comment => comment.id !== commentId)
