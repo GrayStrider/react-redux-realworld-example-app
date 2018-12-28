@@ -1,0 +1,28 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint:latest",
+    "tslint-react",
+    "tslint-eslint-rules"
+    //        "tslint-config-prettier"
+  ],
+  "jsRules": {},
+  "rules": {
+    "indent": [
+      true,
+      "spaces",
+      2
+    ],
+    "no-console": false,
+    "linebreak-style": [
+      true,
+      "LF"
+    ],
+    "quotemark": [
+      true,
+      "single",
+      "avoid-escape"
+    ]
+  },
+  "rulesDirectory": []
+}
