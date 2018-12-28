@@ -53,7 +53,7 @@ MyModules.define('foo', ['bar'], function (bar) {
   };
 });
 
-var bar = MyModules.get('bar');
+const bar = MyModules.get('bar');
 const foo = MyModules.get('foo');
 
 console.log(
@@ -61,3 +61,14 @@ console.log(
 ); // Let me introduce: hippo
 
 foo.awesome(); // LET ME INTRODUCE: HIPPO
+
+
+/**
+ * This is comment
+ *
+ */
+function test2() {
+  console.log('test');
+}
+
+test2();
