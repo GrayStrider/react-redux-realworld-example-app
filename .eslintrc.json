@@ -1,7 +1,20 @@
 {
-  "extends": "google",
+  "parser": "babel-eslint",
+  "plugins": [
+    "react",
+    "import",
+    "flowtype"
+  ],
+  "extends": [
+    "airbnb",
+    "plugin:flowtype/recommended"
+  ],
   "parserOptions": {
     "ecmaVersion": 2017
+  },
+  "rules": {
+    "no-console": "off",
+    "require-jsdoc": "warn"
   },
   "env": {
     "es6": true

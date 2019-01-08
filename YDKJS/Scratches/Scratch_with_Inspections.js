@@ -26,27 +26,35 @@ const MyModules = (function Manager() {
   const get = (name) => modules[name];
 
   return {
-    define: define,
+    define,
     get: get,
   };
 })();
 
 MyModules.define('bar', [], function () {
-  function hello(who) {
-    return 'Let me introduce: ' + who;
-  }
+  /**
+   *
+   * @param {string} who
+   * @return {string}
+   */
+  const hello = function hello(who) {
+    return `Let me introduce: ${who}`;
+  };
 
   return {
-    hello: hello,
+    hello,
   };
 });
 
 MyModules.define('foo', ['bar'], function (bar) {
   const hungry = 'hippo';
 
-  function awesome() {
+  /**
+   * Comment
+   */
+  const awesome = function awesome() {
     console.log(bar.hello(hungry).toUpperCase());
-  }
+  };
 
   return {
     awesome: awesome,

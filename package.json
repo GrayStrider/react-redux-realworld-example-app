@@ -3,17 +3,32 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.2.3",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/preset-stage-3": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "babel-eslint": "^10.0.1",
     "check-dependencies": "^1.1.0",
     "cross-env": "^5.1.4",
-    "eslint": "^4.19.1",
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb": "^17.1.0",
     "eslint-config-google": "^0.11.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.0",
+    "flow-bin": "^0.89.0",
     "install-peers": "^1.0.3",
     "react-scripts": "1.1.1"
   },
   "dependencies": {
     "acorn": "^6.0.4",
     "ajv": "^6.6.2",
+    "flowtype": "^2.0.0",
     "history": "^4.6.3",
+    "install-peerdeps": "^1.9.0",
+    "jsx": "^0.9.89",
     "marked": "^0.3.6",
     "prop-types": "^15.5.10",
     "react": "^16.3.0",
@@ -36,6 +51,10 @@
     "start": "cross-env PORT=4100 react-scripts start",
     "build": "react-scripts build",
     "test": "cross-env PORT=4100 react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "flow start": "flow start",
+    "flow stop": "flow stop",
+    "flow status": "flow status",
+    "flow coverage": "flow coverage"
   }
 }
